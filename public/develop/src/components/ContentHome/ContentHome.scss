@@ -1,0 +1,43 @@
+aside {
+    min-width: 261px;
+    background: #E2DEDC 0% 0% no-repeat padding-box;
+    height: 498px;
+    margin: 24px 0;
+    padding: 22px 17px;
+
+    li {
+        font-size: 18px;
+        text-align: start;
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+.content-flex {
+    display: flex;
+
+    .banner-content {
+        margin: 24px;
+        text-align: start;
+
+        p {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 500;
+            margin: 14px 0 5px 0;
+        }
+    }
+}
+
+.banner {
+    width: 1120px;
+    height: 281px;
+    background: #ACACAC 0% 0% no-repeat padding-box;
+}
