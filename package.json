@@ -6,6 +6,8 @@
   "dependencies": {
     "connect": "~3.6.6",
     "cors": "^2.8.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "serve-static": "~1.13.2"
   },
   "scripts": {
@@ -17,5 +19,9 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/webjump/assessment-frontend#readme"
+  "homepage": "https://bitbucket.org/webjump/assessment-frontend#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "sass": "^1.77.8"
+  }
 }
