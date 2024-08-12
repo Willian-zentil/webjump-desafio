@@ -1,0 +1,26 @@
+.breadcrumbs {
+    height: 54px;
+    display: flex;
+    align-items: center;
+
+    a {
+        margin-right: 5px;
+        text-decoration: none;
+        color: #CB0D1F;
+        text-transform: capitalize;
+        &:first-child {
+            color: #00A8A9;
+        }
+        &:last-child {
+            margin-left: 5px;
+        }
+    }
+
+    span {
+        color: #ACACAC;
+    }
+
+    @media(max-width: 768px) {
+        margin-left: 20px;
+    }
+}

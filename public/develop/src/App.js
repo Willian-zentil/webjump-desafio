@@ -1,17 +1,20 @@
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Category from "./components/Categories/Category";
 
 import './App.css';
-import ContentHome from './components/ContentHome/ContentHome';
+
+
 
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <ContentHome />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/category/:id/:category" element={<Category />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

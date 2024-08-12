@@ -14,6 +14,18 @@ aside {
             color: #000;
         }
     }
+
+    @media(max-width: 1580px) {
+        height: 660px
+    }
+
+    @media(max-width: 1024px) {
+        height: 830px
+    }
+
+    @media(max-width: 768px) {
+        display: none;
+    }
 }
 
 .content-flex {
@@ -26,12 +38,25 @@ aside {
         p {
             font-size: 16px;
             margin: 0;
+
+            @media(max-width: 768px) {
+                padding: 0 20px;
+            }
         }
 
         h1 {
             font-size: 26px;
             font-weight: 500;
             margin: 14px 0 5px 0;
+
+            @media(max-width: 768px) {
+                padding: 0 20px;
+            }
+        }
+
+        @media(max-width: 768px) {
+            padding: 0;
+            margin: 0;
         }
     }
 }
@@ -39,5 +64,19 @@ aside {
 .banner {
     width: 1120px;
     height: 281px;
+    margin: 0 auto;
     background: #ACACAC 0% 0% no-repeat padding-box;
+
+    @media(max-width: 1580px) {
+        max-width: 680px
+    }
+
+    @media(max-width: 1024px) {
+        max-width: 448px
+    }
+
+    @media(max-width: 768px) {
+        max-width: 290px;
+        height: 86px;
+    }
 }

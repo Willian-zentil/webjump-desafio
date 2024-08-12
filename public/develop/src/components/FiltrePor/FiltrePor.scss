@@ -1,0 +1,87 @@
+.filtro-aside {
+    min-width: 261px;
+    height: 474px;
+    border: 1px solid #E2DEDC;
+    padding: 13px 17px;
+
+    h2 {
+        margin: 0;
+        color: #ED1A39;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        margin: 38px 0 12px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #1E2B50;
+        font-weight: bold;
+    }
+
+    .title-categories {
+        margin-top: 13px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        &.cores {
+            display: flex;
+            max-width: 200px;
+            flex-wrap: wrap;
+        }
+    }
+
+    li {
+        list-style: none;
+        color: #626262;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        cursor: pointer;
+
+        a {
+            color: #626262;
+            text-decoration: none;
+        }
+    }
+
+    .cor {
+        width: 48px;
+        height: 24px;
+        display: block;
+
+        &.Preta {
+            background-color: #000;
+        }
+
+        &.Laranja {
+            background-color: orange;
+        }
+
+        &.Amarela {
+            background-color: yellow;
+        }
+
+        &.Rosa {
+            background-color: pink;
+        }
+
+        &.Cinza {
+            background-color: gray;
+        }
+
+        &.Azul {
+            background-color: blue;
+        }
+
+        &.Bege {
+            background-color: beige;
+        }
+    }
+
+    @media(max-width: 768px) {
+        margin: 20px;
+        min-width: 230px;
+    }
+}

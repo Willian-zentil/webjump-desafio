@@ -1,0 +1,128 @@
+.title {
+    color: #ED1A39;
+    font-size: 32px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #E2DEDC;
+    padding-bottom: 10px;
+
+    @media(max-width: 768px) {
+        margin: 20px;
+    }
+}
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 212px;
+    margin: 20px 60px 0 0;
+    text-decoration: none;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+
+    img {
+        border: 1px solid #E2DEDC;
+        padding: 8px;
+        max-height: 227px;
+        height: 227px;
+        width: 227px;
+
+        @media(max-width: 1024px) {
+            height: 115px;
+            width: 115px;
+        }
+    }
+
+    .name {
+        color: #626262;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        min-height: 43px;
+        margin: 8px 0 24px;
+    }
+
+    .price {
+        color: #1E2B50;
+        font-size: 21px;
+        font-weight: bolder;
+    }
+
+    div {
+        display: flex;
+
+        @media(max-width: 1024px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .old {
+        color: #808185;
+        font-size: 15px;
+        text-decoration: line-through;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 2px;
+        min-height: 20px;
+
+        @media(max-width: 1024px) {
+            margin-right: 0px;
+        }
+    }
+
+    a {
+        background-color: #00A8A9;
+        width: 211px;
+        color: #fff;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        margin-top: 10px;
+
+        @media(max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    @media(max-width: 1024px) {
+        max-width: 132px;
+        margin: 20px 18px 0 0;
+    }
+}
+
+.content-category {
+    display: flex;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    @media(max-width: 768px) {
+        margin-left: 0px;
+    }
+}

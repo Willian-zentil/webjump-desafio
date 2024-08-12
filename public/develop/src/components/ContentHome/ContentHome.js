@@ -10,9 +10,9 @@ function ContentHome() {
                 <aside>
                     <ul>
                         <li><a href='/'>Página Inicial</a></li>
-                        <li><a href='#'>Camisetas</a></li>
-                        <li><a href='#'>Calças</a></li>
-                        <li><a href='#'>Sapatos</a></li>
+                        <li><a href='/category/1/camisetas'>Camisetas</a></li>
+                        <li><a href='/category/2/calcas'>Calças</a></li>
+                        <li><a href='/category/3/calcados'>Sapatos</a></li>
                         <li><a href='#'>Contato</a></li>
                     </ul>
                 </aside>
