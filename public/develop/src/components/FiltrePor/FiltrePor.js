@@ -22,7 +22,7 @@ function FiltrePor({ onColorChange, onGenderChange }) {
       <h3 className='title-categories'>Categorias</h3>
       <ul>
         {data.map((item) => (
-          <li key={item.id}><a href={`/category/${item.id}/${item.path}`}>• {item.name}</a></li>
+          <li key={item.id}>• <a href={`/category/${item.id}/${item.path}`}>{item.name}</a></li>
         ))}
       </ul>
       

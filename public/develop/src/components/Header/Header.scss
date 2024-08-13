@@ -29,18 +29,27 @@
     }
 }
 
+.container-logo {
+    padding: 15px 0;
+}
+
 .container-logo div {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     .logo {
         width: 400px;
 
+        @media(max-width: 1024px) {
+            width: 300px;
+        }
+
         @media(max-width: 768px) {
-            width: 180px;
-            margin-right: 40px;
+            width: 150px;
+            padding-left: 50px;
         }
     }
 
@@ -159,8 +168,23 @@
 }
 
 .hamburger-react {
+    width: auto!important;
     @media(min-width: 768px) {
         display: none!important;
     }
-    padding-left: 20px;
+}
+
+.lupa {
+    max-width: 40px;
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.content-header {
+    padding: 0 20px;
+}
+
+.sidebar  {
+    width: 250px!important;
 }

@@ -43,17 +43,14 @@ function ContentCategory() {
             });
     }, [id]);
 
-    // Função para filtrar por gênero
     const handleGenderChange = (gender) => {
         setSelectedGender(gender);
     };
 
-    // Função para filtrar por cor
     const handleColorChange = (color) => {
         setSelectedColor(color);
     };
 
-    // Filtra os dados com base no gênero e na cor
     useEffect(() => {
         let filtered = data;
 
@@ -74,6 +71,14 @@ function ContentCategory() {
                 <FiltrePor onColorChange={handleColorChange} onGenderChange={handleGenderChange} />
                 <div className='flex-content'>
                     <h1 className='title'>{title}</h1>
+                    <div className='orderby'>
+                        <span>Ordenar Por</span>
+                        <select>
+                            <option value="volvo">Preço</option>
+                            <option value="saab">Marca</option>
+                            <option value="opel">Menor Preço</option>
+                        </select>
+                    </div>
                     <div className='row'>
                         {filteredData.length > 0 ? (
                             filteredData.map((item) => (

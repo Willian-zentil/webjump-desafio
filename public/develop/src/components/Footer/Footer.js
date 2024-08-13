@@ -6,7 +6,9 @@ import './Footer.scss'
 function Footer() {
     return (
         <Container>
-            <footer></footer>
+            <div className='content-footer'>
+                <footer></footer>
+            </div>
         </Container>
     )
 }

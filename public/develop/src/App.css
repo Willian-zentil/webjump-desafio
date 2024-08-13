@@ -41,7 +41,8 @@ h6,
 input,
 label,
 ul,
-li {
+li,
+p {
   font-family: "Open Sans", sans-serif;
 }
 
